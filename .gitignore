@@ -1,0 +1,5 @@
+# Folder with project dependencies
+node_modules
+
+# Builded bundles
+build
