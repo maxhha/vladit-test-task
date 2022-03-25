@@ -1,0 +1,28 @@
+@import "../../constants/styles.sass"
+
+.SuggestionInput
+  position: relative
+  max-width: 300px
+  box-sizing: border-box
+  &_input
+    box-sizing: inherit
+    width: 100%
+    padding: 4px
+    font-family: $base-font-family
+  &_options
+    box-sizing: inherit
+    position: absolute
+    margin: 0
+    padding: 0
+    width: 100%
+    list-style-type: none
+    border: 1px solid black
+    border-top: none
+    color: black
+    &__loading
+      color: gray
+      min-height: 2em
+  &_item
+    padding: 4px
+    &:hover
+      outline: -webkit-focus-ring-color auto 1px
