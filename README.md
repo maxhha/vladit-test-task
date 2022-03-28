@@ -6,3 +6,25 @@
 - сверстал простое поле с подсказками для ввода города (см. [SuggestionInput](./src/components/SuggestionInput/SuggestionInput.jsx))
 - добавил логику запроса подсказок (см. [App](./src/components/App/App.jsx))
 - сделал функцию для преобразования всех ключей в верхний регистр, переданного объекта любой вложенности, [upperCaseAllKeysRecursive](./src/utils/upperCaseAllKeysRecursive/upperCaseAllKeysRecursive.js) и добавил для нее [тестов](./src/utils/upperCaseAllKeysRecursive/upperCaseAllKeysRecursive.test.js)
+
+## Запуск
+
+**Настройка переменных окружения**
+
+```
+cp .env-template .env
+cp nginx.conf-template nginx.conf
+```
+
+**Development**
+
+```
+npm run dev
+```
+
+**Production**
+
+```
+npm run build
+docker-compose up
+```
