@@ -1,0 +1,21 @@
+events {}
+http {
+    types {
+        text/html html;
+        text/css css;
+        application/x-javascript js;
+        application/octet-stream ttf;
+    }
+    server {
+        location / {
+            index index.html;
+            root /data/www/;
+        }
+
+        location /api {
+            proxy_pass https://kladr-api.ru/api;
+            proxy_ssl_server_name on;
+            proxy_redirect off;
+        }
+    }
+}

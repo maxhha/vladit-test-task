@@ -6,3 +6,6 @@ build
 
 # Environment variables
 .env
+
+# Nginx configuration
+nginx.conf
